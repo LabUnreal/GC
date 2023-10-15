@@ -1,0 +1,45 @@
+.projectTitle {
+    margin-bottom: 3rem;
+  }
+
+  .projectSubtitle {
+    margin-bottom: 3rem;
+    font-style: italic;
+  }
+
+  .projectSubtitle h3 {
+    text-decoration: underline; 
+    text-underline-position: under;
+    text-decoration-thickness: from-font;
+    text-decoration-color: rgb(145, 5, 5);
+    text-underline-offset: 1px;
+  }
+  
+  .projectAuthor {
+    margin: 44px 0 76px;
+    letter-spacing: 0.05em;
+    font-size: 1.3125rem;
+    font-weight: 200;
+  }
+
+  .projectTitle h2, .projectSubtitle h3, .projectAuthor h4, .description h6 {
+    font-weight: 100;
+    margin-bottom: 4px;
+  }
+
+  .projectSubtitle h3 {
+    display: inline-block;
+  }
+
+  .sup {
+    vertical-align: super;
+    font-size: 16px;
+  }
+
+  ul.projectList {
+    list-style-type: none;
+  }
+  
+  .poem {
+    padding-left: 7rem;
+  }

@@ -1,0 +1,57 @@
+
+/* ALL AUTHORS & ALL PROJECTS PAGES */
+.border {
+    border-left: solid 1px rgb(145, 5, 5);
+    padding-left: 8px;
+    height: 250px;
+}
+
+div.border {
+    margin-left: 8px;
+}
+
+ul.list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .border li {
+    padding-top: 30px;
+  }
+
+.divider {
+    margin-bottom: 46px;
+}
+
+/* Applies to the titles */
+.divider h2, .divider h3 {
+    font-weight: 100;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.divider h2 {
+    border-bottom: solid 1px rgb(145, 112, 5);
+    width: 200px;
+    float: left;
+}
+
+/* Applied to Sessions */
+.divider p {
+    font-size: 0.8375rem;
+    margin-bottom: 6px;
+}
+
+/* Diagonal Content */
+
+.diagonalBox {
+    position: absolute;
+	transform: rotate(11deg);
+}
+
+.content {
+    max-width: 50em;
+    margin-left: 25px;
+    transform: skewY(-11deg);
+}
