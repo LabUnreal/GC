@@ -85,18 +85,15 @@ const projectsData = [
         ]
     },
     {
-        title: "Scions of Prison",
-        subtitle: "Dangerous Whispers from the Dungeons",
-        projectPage: "/projects/scions-of-prison",
+        title: "The Ontological Game",
+        projectPage: "/projects/og",
         auth: "Cergat",
-        description: "An anthology of Albanian prison poets",
-        date: "(forthcoming)"
+        description: "A game of ontological warfare",
     },
     {
-        title: "Vitiators",
-        projectPage: "/projects/vitiators",
-        auth: "Elytron Frass",
-        auth2: "Charles N"
+        title: "Datum Sentiens",
+        projectPage: "/projects/datum-sentiens",
+        auth: "wyrd.ai",
     }
 ]
 

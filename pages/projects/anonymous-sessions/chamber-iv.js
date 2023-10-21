@@ -10,7 +10,12 @@ export default function ChamberIV() {
     const session = project.sessions[4];
 
     return (
-        <Box align="center" w="60%" m="auto" pb={40}>
+        <Box 
+            align="center" 
+            w={{base: "100%", md: "80%", lg: "60%"}}
+            m="auto" 
+            pb={40}
+        >
             <Flex alignItems="center" m="auto" justifyContent="center">
                 <Link href="/projects/anonymous-sessions/chamber-iii"><IoReturnUpBack size="28px" /></Link>
                 <Heading size="xl" pl="1rem">{session.title}</Heading>

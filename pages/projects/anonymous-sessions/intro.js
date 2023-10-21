@@ -9,7 +9,12 @@ export default function IntroPage() {
     const session = project.sessions[0];
 
     return (
-        <Box align="center" w="60%" m="auto" pb={40}>
+        <Box 
+            align="center" 
+            w={{base: "100%", md: "80%", lg: "60%"}}
+            m="auto" 
+            pb={40}
+        >
             <Flex alignItems="center" m="auto" justifyContent="center">
                 <Link href="/projects/anonymous-sessions"><IoReturnUpBack size="28px" /></Link>
                 <Heading size="xl" pl="1rem">{project.title}</Heading>
