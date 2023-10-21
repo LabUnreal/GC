@@ -104,7 +104,7 @@ export default function PublisherCard({ publisher }) {
                     
                     {publisher.tumblr && (
                         <Box mr="1rem">
-                            <Link href={`https://tumblr.com/${publisher.tumblr}`} isExternal>
+                            <Link href={`https://${publisher.tumblr}`} isExternal>
                                 <Image src="/images/tumblr.png" alt="Tumblr" boxSize="24px" />
                             </Link>
                         </Box>

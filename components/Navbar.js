@@ -25,7 +25,6 @@ export default function Navbar() {
                 <Text ml={4}><NextLink href="/">Home</NextLink></Text>
                 <Text ml={4}><NextLink href="/publishers">Publishers</NextLink></Text>
                 <Text ml={4}><NextLink href="/projects">Projects</NextLink></Text>
-                <Text ml={4}><NextLink href="/articles">Articles</NextLink></Text>
                 <Text ml={4}><NextLink href="/contact">Contact</NextLink></Text>
             </Flex>
             <Button display={{ base: "flex", md: "none" }} onClick={onToggle} mr={8}>
@@ -41,7 +40,6 @@ export default function Navbar() {
                 <Link href="/" onClick={onClose}>Home</Link>
                 <Link href="/publishers" onClick={onClose}>Publishers</Link>
                 <Link href="/projects" onClick={onClose}>Projects</Link>
-                <Link href="/articles" onClick={onClose}>Articles</Link>
                 <Link href="/contact" onClick={onClose}>Contact</Link>
               </VStack>
             </DrawerContent>

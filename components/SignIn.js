@@ -1,7 +1,7 @@
 import { Center, FormControl, Input, Button, useToast } from '@chakra-ui/react'
 import { GiWarlockEye } from 'react-icons/gi'
 
-export default function bearings3() {
+export default function Bearings3() {
   const toast = useToast()
 
   return (
