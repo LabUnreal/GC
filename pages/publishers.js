@@ -16,7 +16,7 @@ const publishersData = [
         email: "gnOmebooks@gmail.com",
         twitter: "gnOmebooks",
         facebook: "Gnome-Books-100783536763101/",
-        tumblr: "torpekonyvek.tumblr.com/",
+        tumblr: "https://torpekonyvek.tumblr.com/",
         description: `gnOme is a secret press specializing in the publication of anonymous, pseudepigraphical, and apocryphal works from the past, present, and future.
 
         gnOme is acephalic. Profits from print sales support the authors.
