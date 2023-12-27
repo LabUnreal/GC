@@ -1,4 +1,4 @@
-import projectsData from "@components/projectsData";
+import projectsData from "@components/projectsData"; 
 import ImageWithCaption from "@components/ImageWithCaption";
 import InterviewWithX from "@components/interviews/InterviewWithX";
 import { Box, Flex, Heading, Text, Divider } from "@chakra-ui/react";
