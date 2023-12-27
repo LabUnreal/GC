@@ -1,5 +1,5 @@
-import projectsData from "../../../components/projectsData";
-import styles from "../../../styles/AnonStyles/FrontPage.module.css";
+import projectsData from "@components/projectsData";
+import styles from "@styles/AnonStyles/FrontPage.module.css";
 import { Grid, GridItem, Box, Flex, Heading, Text, Divider } from "@chakra-ui/react";
 import Link from "next/link";
 

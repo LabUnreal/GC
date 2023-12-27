@@ -1,10 +1,10 @@
 // pages/_app.js
 
-import '../styles/globals.css';
+import '@styles/globals.css';
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
-import ExtendedTheme from "../components/ExtendedTheme";
-import Layout from '../components/Layout';
-import Navbar from '../components/Navbar';
+import ExtendedTheme from "@components/ExtendedTheme";
+import Layout from '@components/Layout';
+import Navbar from '@components/Navbar';
 
 function MyApp({ Component, pageProps }) {
     return (

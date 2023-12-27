@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Text } from "@chakra-ui/react";
-import logEntries from '../../../components/logEntries';
+import logEntries from '@components/logEntries';
 
 const parseDescription = (desc) => {
   // Simple replace for bold and italic; consider using a markdown library for more complexity

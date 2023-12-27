@@ -1,5 +1,5 @@
-import projectsData from "../../../components/projectsData";
-import ImageWithCaption from "../../../components/ImageWithCaption";
+import projectsData from "@components/projectsData";
+import ImageWithCaption from "@components/ImageWithCaption";
 import { Box, Flex, Heading, Text, Divider } from "@chakra-ui/react";
 import { IoReturnUpBack, IoReturnUpForwardOutline } from 'react-icons/io5';
 import Link from "next/link";

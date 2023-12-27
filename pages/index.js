@@ -1,6 +1,6 @@
 import { Grid, GridItem, Box, chakra } from "@chakra-ui/react";
-import BearingScale from '../components/BearingScale'
-import SignIn from '../components/SignIn'
+import BearingScale from '@components/BearingScale'
+import SignIn from '@components/SignIn'
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 

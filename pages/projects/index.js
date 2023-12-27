@@ -1,5 +1,5 @@
-import projectsData from "../../components/projectsData";
-import styles from "../../styles/Lists.module.css";
+import projectsData from "@components/projectsData";
+import styles from "@styles/Lists.module.css";
 import { Box, Heading } from "@chakra-ui/react";
 import Link from "next/link";
 

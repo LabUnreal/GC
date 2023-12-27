@@ -1,6 +1,6 @@
 // pages/publishers.js
 
-import PublisherCard from '../components/PublisherCard';
+import PublisherCard from '@components/PublisherCard';
 
 const publishersData = [
     {

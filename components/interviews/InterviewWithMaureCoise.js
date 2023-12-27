@@ -1,5 +1,5 @@
 import { Box, Text, Divider } from '@chakra-ui/react';
-import ImageWithCaption from '../ImageWithCaption';
+import ImageWithCaption from '@components/ImageWithCaption';
 import Link from 'next/link';
 
 export default function InterviewWithMaureCoise() {
