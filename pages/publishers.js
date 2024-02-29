@@ -1,7 +1,8 @@
 // pages/publishers.js
 
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Divider, Text } from '@chakra-ui/react';
 import PublisherCard from '@components/PublisherCard';
+import styles from "@styles/Lists.module.css";
 
 const publishersData = [
     {
@@ -88,6 +89,7 @@ export default function Publishers() {
                                 pl={{ base: "1rem", md: "5rem", lg: "5rem" }} 
                                 fontStyle="italic"
                             >
+                            <Divider />
                             Other Publishers
                             </Text>
                             <PublisherCard publisher={publisher} />
