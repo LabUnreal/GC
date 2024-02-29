@@ -5,11 +5,31 @@ import BearingsData from './BearingsData'
 const MotionText = motion(Text)
 const MotionBox = motion(Box)
 
-export default function BearingScale() {
+// Shuffle function using the Fisher-Yates algorithm
+function shuffleArray(array) {
+    let currentIndex = array.length,  randomIndex;
 
-    const dataTop = BearingsData[Math.floor(Math.random()*BearingsData.length)]
-    const dataBottom = BearingsData[Math.floor(Math.random()*BearingsData.length)]
-    const dataLeft = BearingsData[Math.floor(Math.random()*BearingsData.length)]
+    // While there remain elements to shuffle...
+    while (currentIndex !== 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+}
+
+export default function BearingScale() {
+    // Shuffle the BearingsData and select the first three unique items
+    const shuffledData = shuffleArray([...BearingsData]); // Copy the array to avoid mutating the original data
+    const dataTop = shuffledData[0];
+    const dataBottom = shuffledData[1];
+    const dataLeft = shuffledData[2];
 
     const bearingBottom = {
         initial: { opacity: 1 },
@@ -27,21 +47,21 @@ export default function BearingScale() {
         tap: { opacity: 1 }
     }
 
-  return (
-      <MotionBox initial="initial" whileHover="hover" whileTap="tap">
-        
-        <MotionText suppressHydrationWarning variants={bearingTop} align="center">{dataTop}</MotionText>
-        
-        <Center>
-          <MotionText suppressHydrationWarning position="absolute" mr={430} variants={bearingLeft} align="left">{dataLeft}</MotionText>
-          <MotionBox initial="initial" whileHover={{ rotate: 180 }} whileTap={{ rotate: -270 }}
-          >
-            <Image src="/images/1001-b.png" w={350} alt="1001 Eye" />
-          </MotionBox>
-        </Center>
+    return (
+        <MotionBox initial="initial" whileHover="hover" whileTap="tap">
+            
+            <MotionText suppressHydrationWarning variants={bearingTop} align="center">{dataTop}</MotionText>
+            
+            <Center>
+                <MotionText suppressHydrationWarning position="absolute" mr={430} variants={bearingLeft} align="left">{dataLeft}</MotionText>
+                <MotionBox initial="initial" whileHover={{ rotate: 180 }} whileTap={{ rotate: -270 }}
+                >
+                    <Image src="/images/1001-b.png" w={350} alt="1001 Eye" />
+                </MotionBox>
+            </Center>
 
-        <MotionText suppressHydrationWarning variants={bearingBottom} align="center">{dataBottom}</MotionText>
+            <MotionText suppressHydrationWarning variants={bearingBottom} align="center">{dataBottom}</MotionText>
 
-      </MotionBox>
-  )
+        </MotionBox>
+    )
 }
