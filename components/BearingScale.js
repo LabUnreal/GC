@@ -1,6 +1,7 @@
 import { Box, Center, Text, Image } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import BearingsData from './BearingsData'
+import { useEffect, useState } from 'react';
 
 const MotionText = motion(Text)
 const MotionBox = motion(Box)
@@ -26,10 +27,20 @@ function shuffleArray(array) {
 
 export default function BearingScale() {
     // Shuffle the BearingsData and select the first three unique items
-    const shuffledData = shuffleArray([...BearingsData]); // Copy the array to avoid mutating the original data
-    const dataTop = shuffledData[0];
-    const dataBottom = shuffledData[1];
-    const dataLeft = shuffledData[2];
+    const [bearingsData, setBearingsData] = useState([]);
+
+    useEffect(() => {
+      // Parse the string from the environment variable back into an array
+      const data = process.env.NEXT_PUBLIC_BEARINGS_DATA.split(',');
+      setBearingsData(shuffleArray(data)); // Assuming shuffleArray is defined elsewhere
+  }, []);
+
+  // Ensure bearingsData is loaded before trying to access its items
+  if (bearingsData.length < 3) return <div>Loading...</div>;
+
+  const dataTop = bearingsData[0];
+  const dataBottom = bearingsData[1];
+  const dataLeft = bearingsData[2];
 
     const bearingBottom = {
         initial: { opacity: 1 },
