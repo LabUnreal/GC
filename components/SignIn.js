@@ -16,7 +16,7 @@ export default function Bearings3() {
             onClick={() =>
             toast({
             title: 'Error.',
-            description: "Nope. Try again.",
+            description: "Incorrect. Try again.",
             status: 'error',
             duration: 9000,
             isClosable: true,
