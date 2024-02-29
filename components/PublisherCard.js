@@ -73,7 +73,7 @@ export default function PublisherCard({ publisher }) {
                     pr="1rem" 
                     mb={["0.5rem", "0"]} // Add margin-bottom for small screens
                 > 
-                    {publisher.name}
+                    <Link href={publisher.site}>{publisher.name}</Link>
                 </Heading>
 
                 <Box display="flex">
@@ -121,12 +121,16 @@ export default function PublisherCard({ publisher }) {
             </Flex>
 
             <Box>
-                {publisher.description.split('\n').map((line, index) => (
-                    <Text key={index}>
-                        {parseText(line)}
-                        {index !== publisher.description.split('\n').length - 1 && <br />}
-                    </Text>
-                ))}
+                {publisher.description ? (
+                    publisher.description.split('\n').map((line, index, arr) => (
+                        <Text key={index}>
+                            {parseText(line)}
+                            {index !== arr.length - 1 && <br />}
+                        </Text>
+                    ))
+                ) : (
+                    <Text>No description available.</Text> // Fallback text or component
+                )}
             </Box>
         </Box>
     );
