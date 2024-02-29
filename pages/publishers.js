@@ -39,7 +39,7 @@ const publishersData = [
 
         They focus on works ranging from the examination of temporal anomalies, the occult, myth, madness, treachery, and betrayal to their perverse intersections with modernity, capital, geopolitics, human history and geotrauma.
         
-        Read our interview with Vast Abrupt {link|https://www.guerrillaconcepts.com/chamber-iv|**here**}.`
+        Read our interview with Vast Abrupt {link|https://www.guerrillaconcepts.com/projects/anonymous-sessions/chamber-iv|**here**}.`
     }
 ];
 
