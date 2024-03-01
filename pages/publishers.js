@@ -48,7 +48,7 @@ const publishersData = [
 
         They focus on works ranging from the examination of temporal anomalies, the occult, myth, madness, treachery, and betrayal to their perverse intersections with modernity, capital, geopolitics, human history and geotrauma.
         
-        Read our interview with Vast Abrupt {link|https://www.guerrillaconcepts.com/projects/anonymous-sessions/chamber-iv|**here**}.`
+        Read our interview with Vast Abrupt {link|/projects/anonymous-sessions/chamber-iv|**here**}.`
     },
     // {
     //     type: "anonymous",
@@ -93,7 +93,7 @@ export default function Publishers() {
                             key={index} 
                             pt={20}
                         >
-                            <Box pl={{ base: "1rem", md: "5rem", lg: "5rem" }}>
+                            <Box pl={{ base: "1rem", md: "5rem", lg: "5rem" }} maxW="600px">
                                 <Divider />
                             </Box>
                             <Text 
