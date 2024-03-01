@@ -50,6 +50,15 @@ const publishersData = [
         
         Read our interview with Vast Abrupt {link|https://www.guerrillaconcepts.com/projects/anonymous-sessions/chamber-iv|**here**}.`
     },
+    // {
+    //     type: "anonymous",
+    //     name: "The Anonymous Publishing House",
+    //     site: "https://www.anonymouspublishinghouse.com/",
+    //     email: "info@anonymouspublishinghouse.com",
+    //     twitter: "anonpubhouse",
+    //     facebook: "anonymouspublishinghouse",
+    //     description: "Nestled in the heart of controversy, The Anonymous Publishing House emerges as a bastion for the unspoken and the provocative. With its roots spreading from New York to London and Sydney, this publisher has dedicated nearly seven years to curating a collection of works that challenge the status quo. Through a blend of social media advocacy and traditional print, it champions the cause of free thought across the political divide, ensuring that every story, no matter how contentious, finds its way to the public eye. In a world where the author's identity can often overshadow content, The Anonymous Publishing House stands firm in its belief that the message is what truly matters, fostering a sanctuary for critical thinking and, who knows, perhaps even mad expression."
+    // },
 
     // Other Publishers
     {
