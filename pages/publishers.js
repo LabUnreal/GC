@@ -2,7 +2,6 @@
 
 import { Box, Divider, Text } from '@chakra-ui/react';
 import PublisherCard from '@components/PublisherCard';
-import styles from "@styles/Lists.module.css";
 
 const publishersData = [
     {
@@ -81,15 +80,19 @@ export default function Publishers() {
                 if (publisher.type === "other" && !isOtherPublisherHeaderRendered) {
                     isOtherPublisherHeaderRendered = true; // Set the flag to true
                     return (
-                        <Box key={index}>
+                        <Box 
+                            key={index} 
+                            pt={20}
+                        >
+                            <Box pl={{ base: "1rem", md: "5rem", lg: "5rem" }}>
+                                <Divider />
+                            </Box>
                             <Text 
+                                pl={{ base: "1rem", md: "5rem", lg: "5rem" }}
                                 fontSize="2xl" 
                                 fontWeight="hairline"
-                                pt="2rem" 
-                                pl={{ base: "1rem", md: "5rem", lg: "5rem" }} 
                                 fontStyle="italic"
                             >
-                            <Divider />
                             Other Publishers
                             </Text>
                             <PublisherCard publisher={publisher} />
