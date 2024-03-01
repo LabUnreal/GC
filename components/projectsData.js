@@ -12,7 +12,8 @@ const projectsData = [
         },
         sessions: [
             { 
-                title: "Introduction", 
+                title: "Introduction",
+                author: "Cergat",
                 link: "anonymous-sessions/intro", 
                 image1: "/images/anon/subway_station.jpg",
                 imageAlt1: "Subway Station",
